@@ -22,11 +22,11 @@ class ApiClient {
   private readonly baseUrl: string;
 
   constructor() {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
     
     if (!process.env.NEXT_PUBLIC_API_URL && typeof window !== 'undefined') {
       console.warn(
-        'NEXT_PUBLIC_API_URL is not set. Using default: http://localhost:3000'
+        'NEXT_PUBLIC_API_URL is not set. Using default: http://localhost:4000'
       );
     }
     
